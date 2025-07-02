@@ -8,8 +8,11 @@ import Contact from './Component/Contact';
 import SingleProduct from './Component/SingleProduct';
 import Cart from './Component/Cart';
 import ErrorPage from './Component/ErrorPage';
-import GlobalStyle from './Stylefiles/GlobalStyle'
+import {GlobalStyle} from './Stylefiles/GlobalStyle'
 import { ThemeProvider } from 'styled-components';
+import Header from './MainComponent/Header';
+import Navbar from './MainComponent/Navbar';
+
 function App() {
   const theme = {
     colors:{
@@ -20,6 +23,7 @@ function App() {
     <ThemeProvider theme={theme}>
     <BrowserRouter>
     <GlobalStyle />
+    <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About/>}/>
