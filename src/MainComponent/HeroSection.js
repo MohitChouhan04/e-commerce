@@ -2,18 +2,19 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { Button } from './Button';
-function HeroSection() {
+function HeroSection({myData}) {
+  const {name} = myData;
     return <Wrapper>
       <div className='container'>
         <div className='grid grid-two-column'>
           <div className='hero-section-data'>
             <p className='intro-data'>welcome to</p>
-            <h1>MY Store</h1>
+            <h1>{name}</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
             </p>
 
             <NavLink>
-              <Button>shop now</Button>
+              <Button className='btn'>shop now</Button>
             </NavLink>
 
 
@@ -32,21 +33,30 @@ function HeroSection() {
 }
 const Wrapper=styled.section`
 padding:12rem 0;
+
 img{
 min-width:10rem;
 height:10rem;
 }
 .hero-section-data{
+
 p{
-margin:2rem 0;
+margin:0 2rem;
 }
 h1{
 text-transform:capitalize;
 font-weight:bold;
+margin-top:0;
+margin-left:2rem;
 }
 .intro-data{
-margin-bottom:0;
+margin:0;
+margin-left:2rem;
+
 }
+.btn{
+margin-top:2rem;
+margin-left:2rem}
 }
 .hero-section-image{
 width:100%;

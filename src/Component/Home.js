@@ -1,8 +1,19 @@
 import React from 'react'
 import styled from 'styled-components';
 import HeroSection from '../MainComponent/HeroSection';
+import Services from '../MainComponent/Services';
+import Trusted from '../MainComponent/Trusted';
 function Home() {
-  return <HeroSection/>
+  const data = {
+    name:"My store"
+  }
+  return <>
+  
+  <HeroSection myData={data}/>
+  <Services />
+  <Trusted/>
+  </>
+
 }
 
 export default Home
