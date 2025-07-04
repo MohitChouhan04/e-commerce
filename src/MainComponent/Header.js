@@ -1,23 +1,26 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import Navbar from './Navbar'
+import Nav from './Nav'
+import {ThemeProvider} from 'styled-components'
 function Header() {
   return <MainHeader>
     
     <NavLink to="/">
-    <img src="./images/logoimagecom.jpg" alt="failed to fetch image" className='imagi'></img>
+    <img src="./images/logoimagecom.jpg" alt="failed to fetch image" className='logo'></img>
 
     </NavLink>
     
-    <Navbar/>
+    <Nav/>
     </MainHeader>
   
 }
 
 const MainHeader = styled.header`
-padding: 0 4.8rem;
-height:10rem;
+margin:0;
+padding: 0 20px;
+height:8rem;
+
 background-color: ${({theme})=>theme.colors.bg};
 display: flex;
 justify-content:space-between;

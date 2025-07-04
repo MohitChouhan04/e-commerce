@@ -1,17 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import HeroSection from '../MainComponent/HeroSection';
 function Home() {
-  return (
-    <Wrapper className='test'>Home</Wrapper>
-  )
+  return <HeroSection/>
 }
-const Wrapper = styled.section`
-background-color:${({theme})=> theme.colors.bg}
-width = 2px;
-height= 2px;
 
-`;
 export default Home
 
 // react arrow fuction component with export (rafce)

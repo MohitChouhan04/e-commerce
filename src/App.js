@@ -11,13 +11,18 @@ import ErrorPage from './Component/ErrorPage';
 import {GlobalStyle} from './Stylefiles/GlobalStyle'
 import { ThemeProvider } from 'styled-components';
 import Header from './MainComponent/Header';
-import Navbar from './MainComponent/Navbar';
-
-function App() {
+import Nav from './MainComponent/Nav';
+import Hsection from './MainComponent/HeroSection';
+const App = () => {
   const theme = {
     colors:{
-      bg:"#0000",
+      bg:"#E8E8E8",
+      helper:"#ff5733"
     },
+    media:{
+      mobile:"768px",
+      tab:"998px",
+    }
   }
   return (
     <ThemeProvider theme={theme}>
@@ -36,7 +41,9 @@ function App() {
         
 
       </Routes>
+      
     </BrowserRouter>
+
     </ThemeProvider>
 
   );
