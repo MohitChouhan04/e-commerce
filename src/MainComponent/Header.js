@@ -22,6 +22,7 @@ padding: 0 20px;
 height:8rem;
 
 background-color: ${({theme})=>theme.colors.bg};
+
 display: flex;
 justify-content:space-between;
 align-items:center;
