@@ -20,11 +20,11 @@ function Trusted() {
 
         </div>
         <div className='slide'>
-          <img src='./images/fourthl-removebg-preview.png'></img>
+          <img src='./images/fourthl-removebg-preview.png' alt='failed to fetch'></img>
 
         </div>
         <div className='slide'>
-          <img src='./images/fifthl-removebg-preview.png'></img>
+          <img src='./images/fifthl-removebg-preview.png' alt='failed to fetch'></img>
 
         </div>
 

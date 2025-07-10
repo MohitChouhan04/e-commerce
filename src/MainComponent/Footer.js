@@ -15,8 +15,8 @@ function Footer() {
                     <h3>Talk to us today</h3>
                 </div>
                 <div>
-                  <Button>
-                    <NavLink to="./contact">Get started</NavLink>
+                <Button>
+                    <NavLink to="./Contact">Get started</NavLink>
                 </Button>
 
 
@@ -34,7 +34,7 @@ function Footer() {
                 </div>
                 <div className='footer-subscribe'>
                     <h3>subscribe to get important updates</h3>
-                    <form action="#">
+                    <form action="#" value="form" id="form">
                         <input type='email' placeholder='your email'/>
                         <input type='submit' value="subscribe"/>
                     </form>
@@ -44,14 +44,14 @@ function Footer() {
                      <h3>follow us</h3>
                      <div className='footer-social--icons'>
                         <div>
-                            <a href='#'>
+                            <a href='#'alt="unable">
 
                             <FaDiscord className='icons'/>
                             </a>
                         </div>
 
                         <div>
-                            <a href='#'>
+                            <a href='#' alt="unable">
 
                             <FaInstagram className='icons'/>
                             </a>
@@ -59,7 +59,7 @@ function Footer() {
 
 
                         <div>
-                            <a href='#'>
+                            <a href='#' alt="unable">
 
                             <FaYoutube className='icons'/>
                             </a>
